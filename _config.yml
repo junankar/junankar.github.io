@@ -1,1 +1,4 @@
 theme: jekyll-theme-dinky
+title: Amar Junankar
+description: Software Development Knowledge Base
+permalink: /:categories/:title:output_ext
