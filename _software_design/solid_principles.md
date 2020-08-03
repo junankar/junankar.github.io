@@ -1,7 +1,7 @@
 ---
 title: SOLID Principles
 layout: default
-category: [Software Design]
+category: [Software_Design]
 tags: [SOLID]
 excerpt_separator: <!--more-->
 ---

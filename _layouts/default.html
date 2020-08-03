@@ -22,10 +22,11 @@
 		
 		<u><a href="{{site.url}}">Home</a></u></p>
 		
-		{% for category in site.categories %}
-		{% capture category_name %}{{ category | first }}{% endcapture %}
-		  <u><a href="{{site.baseurl}}/categories/#{{category_name}}">{{category_name}}</a></u></p>
-		{% endfor %}		
+		{% for collection in site.collections %}
+			{% unless collection.label == "posts" %}
+			    <u><a href="{{site.url}}/{{collection.label}}/nav">{{ collection.label | replace: "_", " " | capitalize}}</a></u></p>
+			{% endunless %}
+		{% endfor %}
 		
       </header>
 
@@ -40,10 +41,10 @@
 			{% assign categories = page.categories %}
 		  {% endif %}
 		  {% for category in categories %}
-		  <a href="{{site.baseurl}}/categories/#{{category|slugize}}">Category: {{category}}</a>
+		  Category: <a href="{{site.baseurl}}/{{category}}/nav">{{ category | replace: "_", " " | capitalize}}</a>
 		  {% unless forloop.last %}&nbsp;{% endunless %}
 		  {% endfor %}
-		</div>		
+		</div>
 		
       </section>
 
