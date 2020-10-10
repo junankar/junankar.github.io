@@ -1,0 +1,175 @@
+/* Source: https://frankindev.com/2017/03/18/syntax-highlight-with-rouge-in-jekyll/ */
+figure.highlight,
+pre.highlight {
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    overflow: auto;
+    line-height: 1.4rem;
+    position: relative;
+}
+
+.highlighter-rouge {
+    font-weight: 300;
+    position: relative;
+}
+
+p code.highlighter-rouge,
+p kbd {
+    color: #cc6666;
+    font-size: 1rem;
+    background-color: $code-inline-bg;
+    padding: 2px 4px;
+    border-radius: 2px;
+    word-break: break-word;
+}
+
+kbd {
+    border: 1px solid $gray-800;
+    border-radius: 4px;
+}
+
+/* "data-lang" should be injected by JavaScript */
+/*
+figure.highlight::before,
+div.highlighter-rouge::before {
+    font-family: $font-family-monospace;
+    content: attr(data-lang);
+    font-size: .9rem;
+    color: $gray-200;
+    position: absolute;
+    display: block;
+    height: 1rem;
+    right: .5rem;
+    z-index: 5;
+}
+figure.highlight::before {
+    margin-top: -1rem;
+}
+*/
+
+.rouge-table .code pre {
+    overflow: hidden;
+}
+
+.rouge-table .code pre {
+    overflow: hidden;
+}
+
+table.rouge-table,
+table.rouge-table tr,
+table.rouge-table td,
+table.rouge-table pre {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+table.rouge-table td.gutter {
+    padding-right: .5rem;
+    border-right: 1px solid $gray-500;
+}
+
+table.rouge-table td.code {
+    padding-left: .5rem;
+}
+
+figure pre {
+    margin-bottom: 0;
+}
+
+.lineno {
+    text-align: right;
+}
+
+/* Base16 Tomorrow Dark by Chris Kempson; https://github.com/idleberg */
+.highlight,
+.highlight pre,
+.highlight table {
+    background: $code-bg;
+    color: $gray-200;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/** Visual Studio Code Syntax highlighting styles
+https://github.com/jwarby/jekyll-pygments-themes/pull/4/commits/8f3ea65be8b52dac805e8f3d298cbbe17b6ee9bf
+https://github.com/richleland/pygments-css
+https://pygments.org/demo/#try */
+
+/* Source: https://github.com/richleland/pygments-css/blob/master/vs.css */
+
+.highlight .hll { background-color: #ffffcc; font-weight: normal }
+.highlight  { background: #ffffff; font-weight: normal }
+.highlight .c { color: #008000; font-weight: normal } /* Comment */
+.highlight .err { border: 1px solid #FF0000; font-weight: normal } /* Error */
+.highlight .k { color: #0000ff; font-weight: normal } /* Keyword */
+.highlight .o { color: #666666; font-weight: normal } /* Operator */
+.highlight .ch { color: #008000; font-weight: normal } /* Comment.Hashbang */
+.highlight .cm { color: #008000; font-weight: normal } /* Comment.Multiline */
+.highlight .cp { color: #0000ff; font-weight: normal } /* Comment.Preproc */
+.highlight .cpf { color: #008000; font-weight: normal } /* Comment.PreprocFile */
+.highlight .c1 { color: #008000; font-weight: normal } /* Comment.Single */
+.highlight .cs { color: #008000; font-weight: normal } /* Comment.Special */
+.highlight .gd { color: #A00000; font-weight: normal } /* Generic.Deleted */
+.highlight .ge { font-style: italic; font-weight: normal } /* Generic.Emph */
+.highlight .gr { color: #FF0000; font-weight: normal } /* Generic.Error */
+.highlight .gh { font-weight: normal } /* Generic.Heading */
+.highlight .gi { color: #00A000; font-weight: normal } /* Generic.Inserted */
+.highlight .go { color: #888888; font-weight: normal } /* Generic.Output */
+.highlight .gp { font-weight: normal } /* Generic.Prompt */
+.highlight .gs { font-weight: normal } /* Generic.Strong */
+.highlight .gu { font-weight: normal } /* Generic.Subheading */
+.highlight .gt { color: #0044DD; font-weight: normal } /* Generic.Traceback */
+.highlight .kc { color: #0000ff; font-weight: normal } /* Keyword.Constant */
+.highlight .kd { color: #0000ff; font-weight: normal } /* Keyword.Declaration */
+.highlight .kn { color: #0000ff; font-weight: normal } /* Keyword.Namespace */
+.highlight .kp { color: #0000ff; font-weight: normal } /* Keyword.Pseudo */
+.highlight .kr { color: #0000ff; font-weight: normal } /* Keyword.Reserved */
+.highlight .kt { color: #2b91af; font-weight: normal } /* Keyword.Type */
+.highlight .m { color: #666666; font-weight: normal } /* Literal.Number */
+.highlight .s { color: #a31515; font-weight: normal } /* Literal.String */
+.highlight .na { color: #7D9029; font-weight: normal } /* Name.Attribute */
+.highlight .nb { color: #008000; font-weight: normal } /* Name.Builtin */
+.highlight .nc { color: #2b91af; font-weight: normal } /* Name.Class */
+.highlight .no { color: #880000; font-weight: normal } /* Name.Constant */
+.highlight .nd { color: #AA22FF; font-weight: normal } /* Name.Decorator */
+.highlight .ni { color: #999999; font-weight: normal } /* Name.Entity */
+.highlight .ne { color: #D2413A; font-weight: normal } /* Name.Exception */
+.highlight .nf { color: #000000; font-weight: normal } /* Name.Function */
+.highlight .nl { color: #A0A000; font-weight: normal } /* Name.Label */
+.highlight .nn { color: #0000FF;} /* Name.Namespace */
+.highlight .nt { color: #008000; font-weight: normal } /* Name.Tag */
+.highlight .nv { color: #19177C; font-weight: normal } /* Name.Variable */
+.highlight .ow { color: #0000ff; font-weight: normal } /* Operator.Word */
+.highlight .w { color: #bbbbbb; font-weight: normal } /* Text.Whitespace */
+.highlight .mb { color: #666666; font-weight: normal } /* Literal.Number.Bin */
+.highlight .mf { color: #666666; font-weight: normal } /* Literal.Number.Float */
+.highlight .mh { color: #666666; font-weight: normal } /* Literal.Number.Hex */
+.highlight .mi { color: #666666; font-weight: normal } /* Literal.Number.Integer */
+.highlight .mo { color: #666666; font-weight: normal } /* Literal.Number.Oct */
+.highlight .sa { color: #a31515; font-weight: normal } /* Literal.String.Affix */
+.highlight .sb { color: #a31515; font-weight: normal } /* Literal.String.Backtick */
+.highlight .sc { color: #a31515; font-weight: normal } /* Literal.String.Char */
+.highlight .dl { color: #a31515; font-weight: normal } /* Literal.String.Delimiter */
+.highlight .sd { color: #a31515; font-weight: normal } /* Literal.String.Doc */
+.highlight .s2 { color: #a31515; font-weight: normal } /* Literal.String.Double */
+.highlight .se { color: #a31515; font-weight: normal } /* Literal.String.Escape */
+.highlight .sh { color: #a31515; font-weight: normal } /* Literal.String.Heredoc */
+.highlight .si { color: #a31515; font-weight: normal } /* Literal.String.Interpol */
+.highlight .sx { color: #a31515; font-weight: normal } /* Literal.String.Other */
+.highlight .sr { color: #a31515; font-weight: normal } /* Literal.String.Regex */
+.highlight .s1 { color: #a31515; font-weight: normal } /* Literal.String.Single */
+.highlight .ss { color: #a31515; font-weight: normal } /* Literal.String.Symbol */
+.highlight .bp { color: #008000; font-weight: normal } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #0000FF; font-weight: normal } /* Name.Function.Magic */
+.highlight .vc { color: #19177C; font-weight: normal } /* Name.Variable.Class */
+.highlight .vg { color: #19177C; font-weight: normal } /* Name.Variable.Global */
+.highlight .vi { color: #19177C; font-weight: normal } /* Name.Variable.Instance */
+.highlight .vm { color: #19177C; font-weight: normal } /* Name.Variable.Magic */
+.highlight .il { color: #666666; font-weight: normal } /* Literal.Number.Integer.Long */
+
+
+
+
+
+
