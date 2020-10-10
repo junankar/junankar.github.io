@@ -6,7 +6,7 @@ category:
 
 ## Eisenhower (Urgent-Important) Matrix
 
-> “What is important is seldom urgent and what is urgent is seldom important” - Dwight D. Eisenhower
+> “What is important is seldom urgent and what is urgent is seldom important”  - Dwight D. Eisenhower
 
 This is very useful technique for creating a To-Do list. It categorizes all the tasks on basis of Urgent and Important activities.
 
@@ -20,7 +20,6 @@ Important issues are the ones which are aimed towards certain short-term or long
 |&#9746;    |&#9745;    | Schedule it |
 |&#9745;    |&#9746;    | Delegate    |
 |&#9746;    |&#9746;    | Eliminate   |
-|           |           |             |
 
 Urgent and Important are obviously take the highest priority.
 

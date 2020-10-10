@@ -11,8 +11,6 @@ I am always fascinated towards lessons we can learnt from him which are useful i
 
 There are tons of articles out there. Here are few:
 
-## Bill Belichick
-
 ### Leadership
 [Bill Belichick reveals his 5 rules of exceptional leadership](https://www.cnbc.com/2017/04/13/bill-belichick-leadership-rules.html)
 
