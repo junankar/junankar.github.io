@@ -282,3 +282,17 @@ References:
 * [The stack class](https://daveparillo.github.io/intermediate-cpp/containers/sequence-containers.html#the-stack-class)
 * [The queue class](https://daveparillo.github.io/intermediate-cpp/containers/sequence-containers.html#the-queue-class)
 * [priority_queue Class](https://docs.microsoft.com/en-us/cpp/standard-library/priority-queue-class?view=vs-2019)
+
+## Iterator Categories
+
+> Iterators are a generalization of pointers that allow a C++ program to work with different data structures (containers) in a uniform manner.
+
+[Apache C++ Standard Library User's Guide](https://stdcxx.apache.org/doc/stdlibug/2-2.html) provides a nice summary of iterator categories.
+
+| Iterator Category     | Description                                |
+|:----------------------|:-------------------------------------------|
+|Input Iterator         |Read only, forward moving                   |
+|Output Iterator        |Write only, forward moving                  |
+|Forward Iterator       |Both read and write, forward moving         |
+|Bidirectional Iterator |Read and write, forward and backward moving |
+|Random Access Iterator |Read and write, random access               |

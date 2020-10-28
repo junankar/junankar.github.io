@@ -5,7 +5,6 @@ title: Home
 ## Welcome to Software Development Bookmarks 
 
 This is my collection of bookmarks with brief summary.
-These are related to software development, leadership etc.
 
 ## Recent Posts
 {% for post in site.posts limit:5 %}
@@ -15,6 +14,4 @@ These are related to software development, leadership etc.
     </li>
 </ul>
 {% endfor %}
-
-
 

@@ -25,7 +25,19 @@
 		
 		{% for collection in site.collections %}
 			{% unless collection.label == "posts" %}
-			    <u><a href="{{site.url}}/{{collection.label}}/nav">{{ collection.label | replace: "_", " " | capitalize}}</a></u></br>
+			
+				{% assign displayName = collection.label %}
+				
+				{% if collection.label == "cplusplus" %}
+					{% assign displayName = "C++" %}
+				{% endif %}
+				
+				{% assign words = displayName | split: '_' %}
+				
+				{% capture displayName %}{% for word in words %}{{ word | capitalize }} {% endfor %}{% endcapture %}
+				
+				<u><a href="{{site.url}}/{{collection.label}}/nav">{{ displayName }}</a></u></br>
+				
 			{% endunless %}
 		{% endfor %}
 		
