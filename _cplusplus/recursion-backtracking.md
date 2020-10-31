@@ -60,7 +60,8 @@ bool Recursion(T input)
 
 ### N-Queens Problem
 
-<script src="http://gist-it.appspot.com/https://github.com/junankar/CPP/blob/main/Backtracking_8_Queens.cxx"></script>
+Defer
+<script defer src="http://gist-it.appspot.com/https://github.com/junankar/CPP/blob/main/Backtracking_8_Queens.cxx"></script>
 
 
 ### Cindy's Puzzle
