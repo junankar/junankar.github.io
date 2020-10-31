@@ -60,11 +60,8 @@ bool Recursion(T input)
 
 ### N-Queens Problem
 
-<details><summary>Click to expand C++ Code</summary>
-<p>
 <script src="http://gist-it.appspot.com/https://github.com/junankar/CPP/blob/main/Backtracking_8_Queens.cxx"></script>
-</p>
-</details>
+
 
 ### Cindy's Puzzle
 
