@@ -79,9 +79,13 @@ bool Recursion(T input)
 
 ### Solving a maze
 
+<script src="https://gist-it.appspot.com/github.com/junankar/CPP/blob/main/Backtracking_Maze.cxx" type="text/javascript"></script>
+
+
+
 <details><summary>Click to expand C++ Code</summary>
 <p>
-<script src="http://gist-it.appspot.com/https://github.com/junankar/CPP/blob/main/Backtracking_Maze.cxx"></script>
+<script src="https://gist-it.appspot.com/github.com/junankar/CPP/blob/main/Backtracking_Maze.cxx" type="text/javascript"></script>
 </p>
 </details>
 
