@@ -59,10 +59,9 @@ bool Recursion(T input)
 ```
 
 ### N-Queens Problem
-
-Defer
-<script defer src="http://gist-it.appspot.com/https://github.com/junankar/CPP/blob/main/Backtracking_8_Queens.cxx"></script>
-
+<div id="repos">
+<script defer src="http://gist-it.appspot.com/github/junankar/CPP/blob/main/Backtracking_8_Queens.cxx"></script>
+</div>
 
 ### Cindy's Puzzle
 
