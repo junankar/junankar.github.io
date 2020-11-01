@@ -59,21 +59,14 @@ bool Recursion(T input)
 ```
 
 ### N-Queens Problem
-<div class="gist-it-gist">
-<div class="gist-file">
-<div class="gist-data">
-	
-<pre class="prettyprint">// Reference: 19 CS 106B Lecture Backtracking 8 Queens</pre>
-	
-</div>
-</div>
-</div>
+
+<script src="https://gist-it.appspot.com/github.com/junankar/CPP/blob/main/Backtracking_Cindys_Puzzle.cxx" type="text/javascript"></script>
 
 ### Cindy's Puzzle
 
 <details><summary>Click to expand C++ Code</summary>
 <p>
-<script src="http://gist-it.appspot.com/https://github.com/junankar/CPP/blob/main/Backtracking_Cindys_Puzzle.cxx"></script>
+<script src="https://gist-it.appspot.com/github.com/junankar/CPP/blob/main/Backtracking_Cindys_Puzzle.cxx"></script>
 </p>
 </details>
 
