@@ -59,7 +59,7 @@ bool Recursion(T input)
 ```
 
 ### N-Queens Problem
-<div id="repos">
+<div id="wrapper">
 <script src="http://gist-it.appspot.com/github/junankar/CPP/blob/main/Backtracking_8_Queens.cxx"></script>
 </div>
 
