@@ -60,7 +60,11 @@ bool Recursion(T input)
 
 ### N-Queens Problem
 
-<script src="https://gist-it.appspot.com/github.com/junankar/CPP/blob/main/Backtracking_Cindys_Puzzle.cxx" type="text/javascript"></script>
+<details><summary>Click to expand C++ Code</summary>
+<p>
+<script src="https://gist-it.appspot.com/github.com/junankar/CPP/blob/main/Backtracking_8_Queens.cxx"></script>
+</p>
+</details>
 
 ### Cindy's Puzzle
 
@@ -72,13 +76,9 @@ bool Recursion(T input)
 
 ### Solving a maze
 
-<script src="https://gist-it.appspot.com/github.com/junankar/CPP/blob/main/Backtracking_Maze.cxx" type="text/javascript"></script>
-
-
-
 <details><summary>Click to expand C++ Code</summary>
 <p>
-<script src="https://gist-it.appspot.com/github.com/junankar/CPP/blob/main/Backtracking_Maze.cxx" type="text/javascript"></script>
+<script src="https://gist-it.appspot.com/github.com/junankar/CPP/blob/main/Backtracking_Maze.cxx"></script>
 </p>
 </details>
 
