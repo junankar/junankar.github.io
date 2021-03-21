@@ -17,6 +17,8 @@ collections:
     output: true
   soft_skills:
     output: true
+  algorithms:
+    output: true
     
 defaults:
   -
