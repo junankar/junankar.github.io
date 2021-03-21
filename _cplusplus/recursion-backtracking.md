@@ -61,7 +61,7 @@ bool Recursion(T input)
 
 <details><summary>Click to expand C++ Code</summary>
 <p>
-<script src="http://gist-it.appspot.com/https://github.com/junankar/CPP/blob/main/Backtracking_8_Queens.cxx"></script>
+<script src="https://gist-it.appspot.com/github.com/junankar/CPP/blob/main/Backtracking_8_Queens.cxx"></script>
 </p>
 </details>
 
@@ -69,7 +69,7 @@ bool Recursion(T input)
 
 <details><summary>Click to expand C++ Code</summary>
 <p>
-<script src="http://gist-it.appspot.com/https://github.com/junankar/CPP/blob/main/Backtracking_Cindys_Puzzle.cxx"></script>
+<script src="https://gist-it.appspot.com/github.com/junankar/CPP/blob/main/Backtracking_Cindys_Puzzle.cxx"></script>
 </p>
 </details>
 
@@ -77,7 +77,7 @@ bool Recursion(T input)
 
 <details><summary>Click to expand C++ Code</summary>
 <p>
-<script src="http://gist-it.appspot.com/https://github.com/junankar/CPP/blob/main/Backtracking_Maze.cxx"></script>
+<script src="https://gist-it.appspot.com/github.com/junankar/CPP/blob/main/Backtracking_Maze.cxx"></script>
 </p>
 </details>
 
