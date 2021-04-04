@@ -20,7 +20,9 @@ collections:
   algorithms:
     output: true
   docker:
-    output: true    
+    output: true
+  design_patterns:
+    output: true     
     
 defaults:
   -
