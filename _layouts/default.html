@@ -19,9 +19,12 @@
         <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
         <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
 
-		<li><a class="buttons github" href="{{ site.github.owner_url }}">GitHub Profile</a></li>
+		<u><a class="buttons github" href="{{ site.github.owner_url }}">GitHub Profile</a></u></br>
+		<u><a href="https://www.linkedin.com/in/amarjunankar/">LinkedIn Profile</a></u></br>
+		<u><a href="https://eportfolio.greatlearning.in/amar-junankar">Cloud Computing PGP ePortfolio</a></u></br>
 		
-		<u><a href="{{site.url}}">Home</a></u></br>
+		</br>
+		<li><a href="{{site.url}}">Home</a></li>
 		
 		{% for collection in site.collections %}
 			{% unless collection.label == "posts" %}
