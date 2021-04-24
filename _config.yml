@@ -1,33 +1,8 @@
 remote_theme: pmarsceill/just-the-docs
 title: Amar Junankar
 description: Software Development Bookmarks
-permalink: /:categories/:title:output_ext
+color_scheme: "dark"
+search_enabled: true
 
-kramdown:
-  syntax_highlighter_opts:
-    default_lang: cpp
-    style: vs
-    
-collections:
-  cplusplus:
-    output: true
-  software_design:
-    output: true
-  software_testing:
-    output: true
-  soft_skills:
-    output: true
-  algorithms:
-    output: true
-  docker:
-    output: true
-  design_patterns:
-    output: true     
-    
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "default"
+
     
