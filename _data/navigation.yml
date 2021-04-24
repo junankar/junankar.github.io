@@ -1,0 +1,34 @@
+# main links
+main:
+  - title: "C++"
+    url: /cpp/cpp/
+  - title: "Blog Posts"
+    url: /year-archive/
+  - title: "Collections"
+    url: /collection-archive/    
+  - title: "About"
+    url: /about/
+
+# CPP links
+cpp:
+  - title: C++
+    children:
+      - title: "Koenig Lookup"
+        url: /cpp/koenig_lookup/
+      - title: "Single and Double Dispatch"
+        url: /cpp/dispatch/
+
+  - title: C++11
+    children:
+      - title: "Auto Decltype"
+        url: /cpp/auto-decltype/
+      - title: "Initializer Lists"
+        url: /cpp/initializer-lists/
+      - title: "Lambda Expressions"
+        url: /cpp/lambda-expressions/
+      - title: "Range Based For Loop"
+        url: /cpp/range-based-for-loop/
+      - title: "RValue Reference"
+        url: /cpp/rvalue-reference/
+      - title: "Move Semantics"
+        url: /cpp/move-semantics/
