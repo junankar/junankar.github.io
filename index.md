@@ -10,7 +10,7 @@ excerpt: >
     
 ---
 
-## Recent Posts
+#### Recent Posts
 {% for post in site.posts limit:5 %}
 <ul>
     <li>

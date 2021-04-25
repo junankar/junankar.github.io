@@ -120,16 +120,16 @@
   /* next/previous buttons */
   &--pager {
     display: block;
-    padding: 1em 2em;
+    padding: 0.5em 1em;
     float: left;
-    width: 50%;
+    width: 20%;
     font-family: $sans-serif;
-    font-size: $type-size-5;
+    font-size: $type-size-6;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
     color: $muted-text-color;
-    border: 1px solid mix(#000, $border-color, 25%);
+    border: 0.5px solid mix(#000, $border-color, 25%);
     border-radius: $border-radius;
 
     &:hover {
@@ -439,7 +439,8 @@
 
 .nav__list .nav__items {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
+  line-height: 2;
 
   a {
     color: inherit;
@@ -484,7 +485,7 @@
   margin: 0;
   padding: 0.5rem 0.75rem;
   font-family: $sans-serif-narrow;
-  font-size: $type-size-5;
+  font-size: 0.9em;
   font-weight: bold;
 }
 
@@ -493,7 +494,7 @@
   margin: 0.5rem 0;
   padding: 0.25rem 0;
   font-family: $sans-serif-narrow;
-  font-size: $type-size-6;
+  font-size: 0.9em;
   font-weight: bold;
   text-transform: uppercase;
   border-bottom: 1px solid $border-color;
@@ -515,7 +516,7 @@
   .nav__title {
     color: #fff;
     font-size: $type-size-6;
-    background: $primary-color;
+    background: $base00;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
   }
@@ -531,10 +532,10 @@
   padding: 0;
   width: 100%;
   list-style: none;
-  font-size: $type-size-6;
+  font-size: $type-size-4;
 
   @include breakpoint($large) {
-    font-size: $type-size-7;
+    font-size: $type-size-5;
   }
 
   a {
