@@ -1,6 +1,7 @@
 ---
 permalink: /about/
 title: "About"
+classes: wide
 last_modified_at: 2021-04-24T20:54:41-05:00
 ---
 

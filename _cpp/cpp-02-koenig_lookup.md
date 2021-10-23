@@ -1,8 +1,7 @@
 ---
 title: "Koenig Lookup"
 permalink: /cpp/koenig_lookup/
-excerpt: "Koenig Lookup"
-last_modified_at: 2020-07-27
+excerpt: ""
 ---
 
 ## Argument-Dependent Lookup (ADL)

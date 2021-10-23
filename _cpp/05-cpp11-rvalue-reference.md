@@ -1,7 +1,6 @@
 ---
 title: C++11 rvalue Reference
 permalink: /cpp/rvalue-reference/
-excerpt: "C++11 rvalue Reference."
 last_modified_at: 2020-07-27
 ---
 

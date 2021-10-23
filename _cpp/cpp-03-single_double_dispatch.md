@@ -1,7 +1,6 @@
 ---
 title: "Single and Double Dispatch"
 permalink: /cpp/dispatch/
-excerpt: "Single and Double Dispatch"
 last_modified_at: 2020-07-27
 ---
 

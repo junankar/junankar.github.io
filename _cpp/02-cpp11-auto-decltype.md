@@ -1,7 +1,7 @@
 ---
 title: C++11 auto and decltype
 permalink: /cpp/auto-decltype/
-excerpt: "C++11 auto and decltype."
+excerpt: ""
 last_modified_at: 2020-07-27
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: C++11 Range Based For Loop
 permalink: /cpp/range-based-for-loop/
-excerpt: "C++11 Range Based For Loop."
 last_modified_at: 2020-07-27
 ---
 

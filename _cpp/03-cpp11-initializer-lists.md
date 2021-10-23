@@ -2,7 +2,7 @@
 title: C++11 Initializer List
 classes: wide
 permalink: /cpp/initializer-lists/
-excerpt: "C++11 Initializer List."
+excerpt: ""
 last_modified_at: 2020-07-27
 ---
 

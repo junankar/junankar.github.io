@@ -1,7 +1,6 @@
 ---
 title: C++11 Lambda Expressions
 permalink: /cpp/lambda-expressions/
-excerpt: "C++11 Lambda Expressions."
 last_modified_at: 2020-07-27
 ---
 

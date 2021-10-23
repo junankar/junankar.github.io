@@ -1,16 +1,12 @@
 ---
 title: C++11 Move and Forward Semantics
 permalink: /cpp/move-semantics/
-excerpt: "C++11 C++11 Move and Forward Semantics."
 classes: default
 toc: true
 last_modified_at: 2020-07-27
 ---
 
-# C++11 Move and Forward
-
-
-## Use Case: Avoid unnecessary copy operations
+# Use Case: Avoid unnecessary copy operations
 
 [A Brief Introduction to Rvalue References](https://www.artima.com/cppsource/rvalue.html) provides example of  swap where unnecessary temp copy object can be avoided.
 

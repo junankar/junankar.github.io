@@ -65,20 +65,15 @@ body {
       width: 100%;
       clear: both;
     }
-    .page__date {
-      font-size: $type-size-6;
-      position: relative;
-      
-    }
   }
 }
 
 .page__title {
+  margin-top: 0;
   line-height: 1;
-  margin: 0.5em 0 0.5em;
-
+  
   & + .page__meta {
-    margin-top: 0em;
+    margin-top: -0.5em;
   }
 }
 
@@ -88,12 +83,9 @@ body {
 }
 
 .page__content {
-  margin: 1.5em 0 0 1em;
-  // margin-top: 1.5em;
   h2 {
-    padding-top: 0.7em;
-    // padding-bottom: 0.7em;
-    border-bottom: 0px solid $border-color;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid $border-color;
   }
 
 	h1, h2, h3, h4, h5, h6 {
@@ -116,7 +108,7 @@ body {
   p,
   li,
   dl {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 
   /* paragraph indents */
@@ -167,7 +159,6 @@ body {
 
 .page__hero {
   position: relative;
-  margin-bottom: 2em;
   @include clearfix;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
@@ -176,8 +167,8 @@ body {
 
   &--overlay {
     position: relative;
-    margin-bottom: 1em;
-    padding: 2.5em 0;
+    margin-bottom: 0em;
+    padding-top: 1em;
     @include clearfix;
     background-size: cover;
     background-repeat: no-repeat;
@@ -205,7 +196,8 @@ body {
     .page__lead,
     .btn {
       color: #fff;
-      text-shadow: 3px 3px 4px rgba(#000, 0.8);
+	  // <junankar> Change text shadow
+      text-shadow: 3px 3px 4px rgba(0,0,0, 0.3);
     }
 
     .page__lead {
@@ -213,10 +205,10 @@ body {
     }
 
     .page__title {
-      font-size: $type-size-2;
+      font-size: $type-size-5;
 
       @include breakpoint($small) {
-        font-size: $type-size-1;
+        font-size: $type-size-2;
       }
     }
   }
@@ -233,14 +225,14 @@ body {
   bottom: 0;
   right: 0;
   margin: 0 auto;
-  padding: 2px 5px;
+  padding: 2px 2px;
   color: #fff;
   font-family: $caption-font-family;
-  font-size: 0.6em;
+  font-size: $type-size-7;
   background: #000;
   text-align: right;
   z-index: 5;
-  opacity: 0.4;
+  opacity: 0.5;
   border-radius: $border-radius 0 0 0;
 
   @include breakpoint($large) {
@@ -287,10 +279,10 @@ body {
    ========================================================================== */
 
 .page__meta {
-  margin-top: 1em;
+  margin-top: 2em;
   color: $muted-text-color;
   font-family: $sans-serif;
-  font-size: $type-size-8;
+  font-size: $type-size-6;
 
   p {
     margin: 0;
@@ -366,11 +358,11 @@ body {
 
 .taxonomy__title {
   margin-bottom: 0.5em;
-  color: lighten($text-color, 60%);
+  color: $muted-text-color;
 }
 
 .taxonomy__count {
-  color: lighten($text-color, 50%);
+  color: $muted-text-color;
 }
 
 .taxonomy__index {
@@ -403,7 +395,7 @@ body {
 .back-to-top {
   display: block;
   clear: both;
-  color: lighten($text-color, 50%);
+  color: $muted-text-color;
   font-size: 0.6em;
   text-transform: uppercase;
   text-align: right;

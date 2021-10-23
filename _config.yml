@@ -1,5 +1,5 @@
-remote_theme             : "mmistakes/minimal-mistakes@4.22.0"
-#theme                     : "minimal-mistakes-jekyll"
+remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
+#theme                   : "minimal-mistakes-jekyll"
 
 minimal_mistakes_skin    : "default"
 
@@ -11,7 +11,7 @@ subtitle                 : "Amar Junankar"
 name                     : &name "Amar Junankar"
 description              : &description "A collection of DEV bookmarks with brief summary, examples etc."
 url                      : https://junankar.github.io/
-#baseurl                  : "/minimal-mistakes"
+#baseurl                 : "/minimal-mistakes"
 repository               : "junankar/junankar.github.io"
 
 search                   : true
@@ -125,7 +125,11 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _cpp
+      excerpt: ""
+      header:
+        overlay_color: "#5e616c"
+        overlay_image: /assets/images/banner.jpg
+  # _cpp Folder
   - scope:
       path: ""
       type: cpp
@@ -136,8 +140,12 @@ defaults:
       author_profile: false
       share: false
       comments: false
+      excerpt: ""
       sidebar:
         nav: "cpp"
+      header:
+        overlay_color: "#5e616c"
+        overlay_image: /assets/images/banner.jpg        
 
 # Sass/SCSS
 sass:
