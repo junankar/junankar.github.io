@@ -6,7 +6,7 @@ excerpt: ""
 last_modified_at: 2020-07-27
 ---
 
-###  initializer_list class
+#  initializer_list class
 
 C++11 introduced class called initializer_list.
 
@@ -39,16 +39,16 @@ if(inputList2.begin() == inputList3.begin())
 	cout << "Members are referenced" << endl;
 ```	
 
-### STL containers support for initializer lists
+## STL containers support for initializer lists
 
 ```cpp
 vector<int> inputVec = {1, 2, 3};
 map<string, int> inputMap = { {"One", 1}, {"Two", 2}, {"Three" ,3} };
 ```
 
-###  Using initializer lists for constructors
+##  Using initializer lists for constructors
 
-#### Class without constructor
+### Class without constructor
 
 ```cpp
 #include <initializer_list>
@@ -71,7 +71,7 @@ int main()
 }
 ```
 
-#### Class with constructor: Use list elements in order of parameters
+### Class with constructor: Use list elements in order of parameters
 
 ```cpp
 class Person {

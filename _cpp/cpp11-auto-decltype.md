@@ -5,7 +5,7 @@ excerpt: ""
 last_modified_at: 2020-07-27
 ---
 
-## auto
+# auto
 Allows to declare objects without specifying types.
 
 ```cpp
@@ -13,7 +13,7 @@ map<string, int> nameToAgeMap { {"XYZ", 50} };
 const auto& iter = nameToAgeMap.find("XYZ");
 ```
 
-## decltype
+# decltype
  
 decltype lets  compiler deduce the type of an expression.
  

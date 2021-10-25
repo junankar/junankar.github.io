@@ -103,7 +103,18 @@ collections:
   cpp:
     output: true
     permalink: /:collection/:path/
-
+  coding:
+    output: true
+    permalink: /:collection/:path/
+  ds_arch:
+    output: true
+    permalink: /:collection/:path/     
+  soft_skills:
+    output: true
+    permalink: /:collection/:path/       
+  misc:
+    output: true
+    permalink: /:collection/:path/    
 
 # Defaults
 defaults:
@@ -120,7 +131,7 @@ defaults:
       related: true
   # _pages
   - scope:
-      path: "_pages"
+      path: ""
       type: pages
     values:
       layout: single
@@ -145,7 +156,75 @@ defaults:
         nav: "cpp"
       header:
         overlay_color: "#5e616c"
-        overlay_image: /assets/images/banner.jpg        
+        overlay_image: /assets/images/banner.jpg      
+  # _coding Folder
+  - scope:
+      path: ""
+      type: coding
+    values:
+      layout: single
+      classes: wide
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      excerpt: ""
+      sidebar:
+        nav: "coding"
+      header:
+        overlay_color: "#5e616c"
+        overlay_image: /assets/images/banner.jpg
+  # ds_arch Folder
+  - scope:
+      path: ""
+      type: ds_arch
+    values:
+      layout: single
+      classes: wide
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      excerpt: ""
+      sidebar:
+        nav: "ds_arch"
+      header:
+        overlay_color: "#5e616c"
+        overlay_image: /assets/images/banner.jpg
+  # soft_skills Folder
+  - scope:
+      path: ""
+      type: soft_skills
+    values:
+      layout: single
+      classes: wide
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      excerpt: ""
+      sidebar:
+        nav: "soft_skills"
+      header:
+        overlay_color: "#5e616c"
+        overlay_image: /assets/images/banner.jpg          
+  # _misc Folder
+  - scope:
+      path: ""
+      type: misc
+    values:
+      layout: single
+      classes: wide
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      excerpt: ""
+      sidebar:
+        nav: "misc"
+      header:
+        overlay_color: "#5e616c"
+        overlay_image: /assets/images/banner.jpg
 
 # Sass/SCSS
 sass:
@@ -175,7 +254,6 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-
 
 # Archives
 #  Type
@@ -212,3 +290,12 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+# https://github.com/riboseinc/jekyll-external-links
+external_links:
+  selector: 'main a'
+  ignored_selectors:
+    - a[href*=travis]
+    - a[href*=coverity]
+    - a[href*=codecov]
+  marker_html: "<span class='ico-ext'><i class='fas fa-external-link-square-alt'></i></span>"

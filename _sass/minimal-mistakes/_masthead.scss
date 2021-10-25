@@ -48,8 +48,7 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-item-align: center;
-  align-self: center;
-  color: $custom-theme-background-color;
+  align-self: left;
   // z-index: 20;
 }
 
@@ -77,6 +76,7 @@
     margin: 0;
     padding: 0;
     clear: both;
+	color: black;
     list-style-type: none;
   }
 }

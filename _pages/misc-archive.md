@@ -1,8 +1,8 @@
 ---
-title: C++
+title: Miscellaneous links
 layout: collection
-permalink: /cpp/
-collection: cpp
+permalink: /misc/
+collection: misc
 entries_layout: grid
 classes: wide
 ---

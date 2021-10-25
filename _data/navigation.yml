@@ -2,10 +2,14 @@
 main:
   - title: "C++"
     url: /cpp/cpp/
-  - title: "Blog Posts"
-    url: /year-archive/
-  - title: "Collections"
-    url: /collection-archive/    
+  - title: "&#60;&#47;Code&#62;"
+    url: /coding/coding/
+  - title: "Design and Architecture"
+    url: /ds_arch/ds_arch/
+  - title: "Soft Skills"
+    url: /soft_skills/soft_skills/
+  - title: "Misc"
+    url: /misc/misc/  
   - title: "About"
     url: /about/
 
@@ -17,6 +21,14 @@ cpp:
         url: /cpp/koenig_lookup/
       - title: "Single and Double Dispatch"
         url: /cpp/dispatch/
+      - title: "RValue Reference"
+        url: /cpp/rvalue-reference/
+      - title: "STL Containers"
+        url: /cpp/std_containers/  
+      - title: "Policy Based Design"
+        url: /cpp/policy_based_design/
+      - title: "PImpl"
+        url: /cpp/pimpl/         
 
   - title: C++11
     children:
@@ -28,7 +40,63 @@ cpp:
         url: /cpp/lambda-expressions/
       - title: "Range Based For Loop"
         url: /cpp/range-based-for-loop/
-      - title: "RValue Reference"
-        url: /cpp/rvalue-reference/
       - title: "Move Semantics"
         url: /cpp/move-semantics/
+      - title: "Type Alias"
+        url: /cpp/type-aliases/
+      - title: "Uniform Initialization"
+        url: /cpp/uniform-initialization/          
+
+# Coding
+coding:
+  - title: Coding
+    children:
+      - title: "Coding Exercises"
+        url: /coding/github-pages/
+
+# Design and Architecture
+ds_arch:
+  - title: "Design"
+    children:
+      - title: "SOLID Principles"
+        url: /ds_arch/solid_principles/
+  - title: "Design Patterns"
+    children:
+      - title: "Singleton"
+        url: /ds_arch/singleton-design-pattern/
+      - title: "Abstract Factory"
+        url: /ds_arch/abstract-factory-design-pattern/
+      - title: "Visitor"
+        url: /ds_arch/singleton-design-pattern/        
+  - title: "Data Structures"
+    children:
+      - title: "Disjoint Sets"
+        url: /ds_arch/disjoint-sets/   
+# 
+soft_skills:
+  - title: "Soft Skills"
+    children:
+      - title: "Who's Got the Monkey?"
+        url: /soft_skills/hbr-whos-got-the-monkey/
+      - title: "Belbin's Team Roles"
+        url: /soft_skills/belbin_team_roles/
+      - title: "Situational Leadership"
+        url: /soft_skills/situational-leadership/
+      - title: "Lewin's Leadership Styles"
+        url: /soft_skills/lewin-leadership-styles/
+      - title: "Jack Welch's Leadership"
+        url: /soft_skills/jack-welch-leadership/
+      - title: "Transition to Manager Position"
+        url: /soft_skills/transition-to-manager-position/
+      - title: "Eisenhower Decision Matrix"
+        url: /soft_skills/eisenhower-decision-matrix/        
+      - title: "Brainwriting"
+        url: /soft_skills/brainwriting/
+        
+# Miscellaneous links
+misc:
+  - title: Miscellaneous Links
+    children:
+      - title: "GitHub Pages"
+        url: /misc/github-pages/
+        

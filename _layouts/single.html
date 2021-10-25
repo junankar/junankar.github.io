@@ -26,7 +26,7 @@ layout: default
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
-          {% if page.title %}<h1 id="page-title" class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+          {% if page.title %}<h3 id="page-title" class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h3>{% endif %}
           {% include page__meta.html %}
         </header>
       {% endunless %}
@@ -40,7 +40,61 @@ layout: default
             </nav>
           </aside>
         {% endif %}
-        {{ content }}
+		
+		{% comment %} <!-- Start of Processing for External Links --> {% endcomment %}
+		
+		{% comment %} <!--  Reference: https://www.raghuveer.net/posts/jekyllliquid --> {% endcomment %}
+		{% comment %} <!-- Liquid Code to Parse Wiki-like link Syntax --> {% endcomment %}
+		{% comment %} <!-- Line1: Get content from the current page into the variable content_array by splitting it using '[​[' as a delimiter, If a page has "lorem ipsum varum [​[dorum]] borum [​[morum]] gerum" as its content, the resultant content_array will contain the following: ["lorem ipsum varum", "dorum]] borum", "morum]] gerum"] --> {% endcomment %}
+
+		{% assign link_open_delimiter = '[[' %}
+		{% assign link_close_delimiter = ']]' %}
+		{% assign external_link_delimiter = '::' %}
+
+		{% comment %} <!-- The use of this weird looking symbol i.e., "$@" is to ensure that we do not fall victim to parsing error due to use of common delimiters like commas(,) in user-code. --> {% endcomment %}
+		{% assign link_joiner_delimiter = '$@' %}
+		
+		{% assign content_array = content | split: link_open_delimiter %}
+
+		{% for item in content_array %}
+			{% if forloop.index > 0 %}
+				{% comment %} <!-- Same as the first comment, but for closing brackets -->{% endcomment %}
+				{% assign itemparts = item | split:link_close_delimiter %}
+
+				{% comment %} <!-- itempart[0] contains the link in the case of internal link and both link as well as url in case of external link -->{% endcomment %}
+				{% assign internal_link = itemparts[0] %}
+				{% assign external_link = itemparts[0] | split:external_link_delimiter %}			
+			
+				{% comment %} <!--  external_link[1] will be zero only when it is an internal link as we are splitting itemparts by :: in the previous line -->{% endcomment %}
+				{% if external_link[1] != nil %}					
+					{% assign external_links = external_links | append: link_joiner_delimiter | append: external_link[0] %}
+					{% assign external_urls = external_urls | append: link_joiner_delimiter | append: external_link[1] %}
+				{% endif %}
+			{% endif %}
+		{% endfor %}
+		
+	
+		{% comment %} <!-- Store all links and urls in separate arrays --> {% endcomment %}
+		{% assign external_url_array = external_urls | split:link_joiner_delimiter %}
+		{% assign external_link_array = external_links | split:link_joiner_delimiter %}
+		
+		
+		{% comment %} <!-- Store the content to changed in the replaced_content variable --> {% endcomment %}
+		{% assign replaced_content = content %}		
+	
+		{% for title in external_link_array %}			
+			{% assign url = external_url_array[forloop.index0] %}		
+			{% assign link_text = title | append: '  ' | append: '<a href="' | append: url | append: '">' | append: '<i class="fas fa-link" aria-hidden="true"></i>' | append: '</a>' %}
+
+			{% comment %} <!-- Since the external link is of the form [​[Title::URL]], while replacing we have to append the "::URL" part to the title, which is done here using "append: external_link_delimiter" -->{% endcomment %}
+			{% assign bracket_link = link_open_delimiter | append: title | append: external_link_delimiter | append: url | append: link_close_delimiter %}
+			{% assign replaced_content = replaced_content | replace: bracket_link,link_text %}
+		{% endfor %}
+		
+		{% comment %} <!-- End of Processing for External Links --> {% endcomment %}		
+       	
+		{{ replaced_content | markdownify }}
+		
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 

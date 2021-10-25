@@ -3,6 +3,7 @@ title: C++11 Move and Forward Semantics
 permalink: /cpp/move-semantics/
 classes: default
 toc: true
+toc_sticky: true
 last_modified_at: 2020-07-27
 ---
 

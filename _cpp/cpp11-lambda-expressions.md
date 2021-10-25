@@ -4,14 +4,14 @@ permalink: /cpp/lambda-expressions/
 last_modified_at: 2020-07-27
 ---
 
-Form of Lambda Expression
+# Form of Lambda Expression
 ```cpp
 [capture list](parameter list) mutable noexcept -> return-type {body}
 ```
 
 Internally, compiler generates a class with function call operator().
 
-### Capture List
+## Capture List
 
 Specifies variables in the enclosing scope which need to be captured by value or by reference
 
@@ -33,7 +33,7 @@ lambda();
 cout << i << endl; // Prints 100
 ```
 
-### Parameter List  
+## Parameter List  
 
 Specifies input parameters for lambda.
 
@@ -44,19 +44,19 @@ Specifies input parameters for lambda.
     cout << square << endl; // Prints 40
 ```
 
-### Mutable Specification
+## Mutable Specification
 
 By default lambda's function call operator() is const-by-value. Mutable specification allows lambda to modify variables which are captured by reference.
 
-### Exception Specification
+## Exception Specification
 
 noexcept exception specification to indicate that the lambda expression does not throw any exceptions.
 
-### Return type
+## Return type
 
 Compiler automatically deduces return type if a trailing-return-type is not explicitly specified.
 
-### Example Usage with STL Algorithms
+## Example Usage with STL Algorithms
 
 ```cpp
     vector<int> numbers {1, 2, 3};    
